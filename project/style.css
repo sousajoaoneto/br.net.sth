@@ -1,0 +1,114 @@
+header.nav .row-fluid{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#accessibility{
+    background: #3498DB;
+}
+#accessibility a{
+    color: #fff;
+    text-decoration: underline;
+}
+#accessibility a:hover{
+    color: #3498DB;
+}
+header.nav>.container{
+    position: relative;
+}
+#primary-nav{
+    position: absolute;
+    top: 0;
+    z-index: 9;
+    left: 0;
+    right: 0;
+}
+#primary-nav .brand img{
+    width: 200px;
+    height: auto;
+}
+#primary-nav nav{
+    margin-top: 12px;
+}
+#primary-nav nav>ul.menu li{
+    display: inline-block;
+}
+#primary-nav nav>ul.menu li a{
+    color: #fff;
+}
+#primary-nav nav>ul.menu li a:hover{
+    color: #3498DB;
+}
+#primary-nav nav>ul.menu li a.active{
+    color: #3498db;
+    background-color: transparent;
+    border: 1px solid #3498db;
+    text-shadow: none;
+    padding: .5rem .875rem;
+    font-size: 1rem;
+    line-height: 1.3125;
+    display: inline-block;
+    font-family: 'Source Sans Pro','Helvetica Neue',HelveticaNeue,Helvetica,Arial,sans-serif;
+    font-weight: 400;
+    cursor: pointer;
+    text-decoration: none;
+    -webkit-transition: all .25s ease;
+    -moz-transition: all .25s ease;
+    transition: all .25s ease;
+}
+.home #primary-nav nav>ul.menu li a.active{
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+/*
+=======================================
+            SLIDER
+=======================================
+*/
+#slider1_container{
+    display: none;
+    position: relative;
+    margin: 0 auto;
+    top: 0px;
+    left: 0px;
+    width: 1300px;
+    height: 500px;
+    overflow: hidden;
+}
+.jssorb21 {
+    position: absolute;
+}
+.jssorb21 div, .jssorb21 div:hover, .jssorb21 .av {
+    position: absolute;
+    /* size of bullet elment */
+    width: 19px;
+    height: 19px;
+    text-align: center;
+    line-height: 19px;
+    color: white;
+    font-size: 12px;
+    background: url(./images/b21.png) no-repeat;
+    overflow: hidden;
+    cursor: pointer;
+}
+.jssorb21 div { background-position: -5px -5px; }
+.jssorb21 div:hover, .jssorb21 .av:hover { background-position: -35px -5px; }
+.jssorb21 .av { background-position: -65px -5px; }
+.jssorb21 .dn, .jssorb21 .dn:hover { background-position: -95px -5px; }
+.jssora21l, .jssora21r {
+    display: block;
+    position: absolute;
+    /* size of arrow element */
+    width: 55px;
+    height: 55px;
+    cursor: pointer;
+    background: url(./images/a21.png) center center no-repeat;
+    overflow: hidden;
+}
+.jssora21l { background-position: -3px -33px; }
+.jssora21r { background-position: -63px -33px; }
+.jssora21l:hover { background-position: -123px -33px; }
+.jssora21r:hover { background-position: -183px -33px; }
+.jssora21l.jssora21ldn { background-position: -243px -33px; }
+.jssora21r.jssora21rdn { background-position: -303px -33px; }
