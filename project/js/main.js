@@ -98,9 +98,20 @@ jQuery(document).ready(function ($) {
         $('#hamburger').toggleClass('open');
     });
 
-
     //Acessibility
-    $('.contrast').on('click',function () {
+    $('.contrast').on('click',function (e) {
+        e.preventDefault();
         $('body').toggleClass('contrast');
     })
+    $( "body" ).keypress(function( event ) {
+        if ( event.which == 36 ) {
+            event.preventDefault();
+            $('body').toggleClass('contrast');
+        }
+    });
+    $( "input" ).keypress(function( event ) {
+        if ( event.which == 36 ) {
+            event.stopPropagation();
+        }
+    });
 });

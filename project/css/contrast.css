@@ -11,7 +11,7 @@ body.contrast *, body.contrast .dark-text{
     color: #fff !important;
 }
 /*COLOR BLACK*/
-body.contrast #accessibility a:hover, body.contrast #primary-nav nav > ul.menu li a:hover{
+body.contrast #accessibility a:hover, body.contrast #primary-nav nav > ul.menu li a:hover,body.contrast li input{
     color: #000 !important;
 }
 body.contrast footer,body.contrast #accessibility,body.contrast #services{
