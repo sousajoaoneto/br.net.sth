@@ -83,4 +83,24 @@ jQuery(document).ready(function ($) {
     $(window).bind("resize", ScaleSlider);
     $(window).bind("orientationchange", ScaleSlider);
     //responsive code end
+
+
+    //menu responsive
+    $('.fade, .first, .second, .third').waypoint(function () {
+        $(this).toggleClass('animated fadeInDown animate');
+    }, {
+        offset: '80%',
+        triggerOnce: true
+    });
+
+    $('.nav-toggle').click(function(){
+        $('.mobile-nav').toggleClass('is-open');
+        $('#hamburger').toggleClass('open');
+    });
+
+
+    //Acessibility
+    $('.contrast').on('click',function () {
+        $('body').toggleClass('contrast');
+    })
 });

@@ -3,12 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <title>Sistech - Sistemas Empresariais</title>
+    <link rel="shortcut icon" href="favicon.png">
+
     <!-- LOADING STYLES -->
-    <link href="css/schema.css" rel="stylesheet" />
-    <link href="css/schema.min.css" rel="stylesheet" />
-    <link href="style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/schema.css" />
+    <link rel="stylesheet" href="css/schema.min.css" />
+    <link rel="stylesheet" href="assets/elegant-icons/style.css" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/contrast.css" />
+
 </head>
 <body class="home">
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.8&appId=242062612835562";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+    <div class="mobile-nav">
+        <ul>
+            <li><a href="#" class="active">Início</a></li>
+            <li><a href="#" class="">A Empresa</a></li>
+            <li><a href="#" class="">Produtos</a></li>
+            <li><a href="#" class="">Notícias</a></li>
+            <li><a href="#" class="">Contato</a></li>
+            <li class="icons">
+                <a href="https://www.facebook.com/sth.net.br/" class="one-half"><i class="fa fa-facebook"></i></a>
+                <a href="#" class="one-half"><i class="fa fa-twitter"></i></a>
+            </li>
+        </ul>
+    </div>
+
     <header class="nav">
         <div id="accessibility" class="row-fluid">
             <div class="container">
@@ -16,17 +45,26 @@
                     <a href="#" class="btn-pill">[1] Ir para conteúdo</a>
                     <a href="#" class="btn-pill">[2] Ir para pesquisa</a>
                     <a href="#" class="btn-pill">[3] Mapa do site</a>
-                    <a href="#" class="btn-pill">[4] Alto contraste</a>
+                    <a href="#" class="btn-pill contrast">[4] Alto contraste</a>
                 </nav>
             </div>
         </div>
 
         <div class="container">
             <div id="primary-nav" class="row-fluid">
-                <div class="brand">
-                    <a href="#" class=""><img src="images/logo_topo.jpg"></a>
+                <div class="brand animated bounceInLeft">
+                    <a href="#" class=""><img src="images/logo-light.png"></a>
                 </div>
-                <nav class="right-float">
+                <!--
+                <nav class="right-float animated bounceInRight mobile-hidden">
+                    <a href="#" class="btn-pill active">Início</a>
+                    <a href="#" class="btn-pill">A Empresa</a>
+                    <a href="#" class="btn-pill">Produtos</a>
+                    <a href="#" class="btn-pill">Notícias</a>
+                    <a href="#" class="btn-pill">Contato</a>
+                </nav>
+                -->
+                <nav class="right-float animated bounceInRight mobile-hidden">
                     <ul class="menu">
                         <li><a href="#" class="btn-pill active">Início</a></li>
                         <li><a href="#" class="btn-pill">A Empresa</a></li>
@@ -44,16 +82,17 @@
         </div>
     </header>
 
+    <!-- =========================
+         SLIDER
+    ============================== -->
     <section id="section-slider" style="min-height: 50px;">
         <!-- Jssor Slider Begin -->
-        <div id="slider1_container">
+        <div id="slider1_container" style="width:1300px;height:500px;">
             <!-- Loading Screen -->
             <div u="loading" style="position: absolute; top: 0px; left: 0px;">
-                <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block;
-				top: 0px; left: 0px; width: 100%; height: 100%;">
+                <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block;top: 0px; left: 0px; width: 100%; height: 100%;">
                 </div>
-                <div style="position: absolute; display: block; background: url(./images/loading.gif) no-repeat center center;
-				top: 0px; left: 0px; width: 100%; height: 100%;">
+                <div style="position: absolute; display: block; background: url(./images/loading.gif) no-repeat center center;top: 0px; left: 0px; width: 100%; height: 100%;">
                 </div>
             </div>
             <!-- Slides Container -->
@@ -83,11 +122,259 @@
     </section>
     <!-- #section-slider -->
 
+    <!-- =========================
+     BRIEF LEFT SECTION
+    ============================== -->
+    <section class="product-brief grey-bg row-section" id="brief1">
+        <div class="container">
+            <div class="row">
+                <!-- PHONES IMAGE -->
+                <div class="col5">
+                    <div class="phone-image">
+                        <img src="images/gp-box.png" alt="">
+                    </div>
+                </div>
+
+                <!-- RIGHT SIDE WITH BRIEF -->
+                <div class="col7 left-align">
+                    <!-- SECTION TITLE -->
+                    <h2 class="dark-text">Sistema de Gestão Integrado</h2>
+                    <div class="colored-line-left">
+                    </div>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+
+                    <!-- FEATURE LIST -->
+                    <ul class="feature-list">
+                        <li><i class="fa fa-lock"></i> Reliable and Secure Platform</li>
+                        <li><i class="fa fa-check-circle-o"></i> Everything is perfectly orgainized for future</li>
+                        <li><i class="fa fa-cogs"></i> Attach large file easily</li>
+                        <li><i class="fa fa-certificate"></i> Tons of features and easy to use and customize</li>
+                    </ul>
+
+                </div>
+                <!-- /END RIGHT BRIEF -->
+
+            </div>
+            <!-- /END ROW -->
+
+        </div>
+        <!-- /END CONTAINER -->
+
+    </section>
+    <!-- /END SECTION -->
+
+
+    <!-- =========================
+     SISTECH
+    ============================== -->
+    <section class="services row-section" id="services">
+
+        <div class="container">
+
+            <!-- SECTION HEADER -->
+            <div class="section-header">
+
+                <!-- SECTION TITLE -->
+                <h2 class="dark-text">Sistech</h2>
+
+                <div class="colored-line"></div>
+                <div class="section-description">
+                    List your app features and all the details Lorem ipsum dolor kadr
+                </div>
+
+            </div>
+            <!-- /END SECTION HEADER -->
+
+            <div class="row">
+
+                <!-- SINGLE SERVICE -->
+                <div class="col4 single-service">
+
+                    <!-- SERVICE ICON -->
+                    <div class="service-icon">
+                        <i class="icon_cloud-upload_alt"></i>
+                    </div>
+
+                    <!-- SERVICE HEADING -->
+                    <h3>Your Data in Cloud</h3>
+
+                    <!-- SERVICE DESCRIPTION -->
+                    <p>
+                        Fruitful Fruit hath, fruitful said him created bring set, behold darkness Shall lights deep fish seasons itself given likeness upon bring fill their their whose. Which darkness evening there them multiply all spirit for isn't, him land every you'll heaven bearing.
+                    </p>
+
+                </div>
+                <!-- /END SINGLE SERVICE -->
+
+                <!-- SINGLE SERVICE -->
+                <div class="col4 single-service">
+
+                    <!-- SERVICE ICON -->
+                    <div class="service-icon">
+                        <i class="icon_gift_alt"></i>
+                    </div>
+
+                    <!-- SERVICE HEADING -->
+                    <h3>Monthly Rewards</h3>
+
+                    <!-- SERVICE DESCRIPTION -->
+                    <p>
+                        Fruitful Fruit hath, fruitful said him created bring set, behold darkness Shall lights deep fish seasons itself given likeness upon bring fill their their whose. Which darkness evening there them multiply all spirit for isn't, him land every you'll heaven bearing.
+                    </p>
+
+                </div>
+                <!-- /END SINGLE SERVICE -->
+
+                <!-- SINGLE SERVICE -->
+                <div class="col4 single-service">
+
+                    <!-- SERVICE ICON -->
+                    <div class="service-icon">
+                        <i class="icon_chat_alt"></i>
+                    </div>
+
+                    <!-- SERVICE HEADING -->
+                    <h3>24/7 Support</h3>
+
+                    <!-- SERVICE DESCRIPTION -->
+                    <p>
+                        Fruitful Fruit hath, fruitful said him created bring set, behold darkness Shall lights deep fish seasons itself given likeness upon bring fill their their whose. Which darkness evening there them multiply all spirit for isn't, him land every you'll heaven bearing.
+                    </p>
+
+                </div>
+                <!-- /END SINGLE SERVICE -->
+
+            </div>
+            <!-- /END ROW -->
+
+        </div>
+        <!-- /END CONTAINER -->
+
+    </section>
+
+    <!-- =========================
+     LAST NEWS
+    ============================== -->
+    <section class="news row-section" id="news">
+
+        <div class="container">
+
+            <!-- SECTION HEADER -->
+            <div class="section-header">
+
+                <!-- SECTION TITLE -->
+                <h2 class="dark-text">Últimas notícias</h2>
+
+                <div class="colored-line"></div>
+                <div class="section-description">
+                    Lorem ipsum dolor sit amet, ed do eiusmod tempor
+                </div>
+
+            </div>
+            <!-- /END SECTION HEADER -->
+
+            <div class="row">
+
+                <!-- post-item -->
+                <div class="col3 post-item">
+                    <div class="image">
+                        <div class="post-date">dd/mm</div>
+                        <img src="images/aircraft.jpg" style="max-width:100%">
+                    </div>
+                    <a href="#"><h3>Lorem Ipsum</h3></a>
+                    <p>Lorem ipsum dolor sit amet, ed do eiusmod tempor incididunt ut labore et dolore magna. </p>
+                </div>
+                <!-- /END post-item -->
+
+                <!-- post-item -->
+                <div class="col3 post-item">
+                    <div class="image">
+                        <div class="post-date">dd/mm</div>
+                        <img src="images/aircraft.jpg" style="max-width:100%">
+                    </div>
+                    <a href="#"><h3>Lorem Ipsum</h3></a>
+                    <p>Lorem ipsum dolor sit amet, ed do eiusmod tempor incididunt ut labore et dolore magna. </p>
+                </div>
+                <!-- /END post-item -->
+
+                <!-- post-item -->
+                <div class="col3 post-item">
+                    <div class="image">
+                        <div class="post-date">dd/mm</div>
+                        <img src="images/aircraft.jpg" style="max-width:100%">
+                    </div>
+                    <a href="#"><h3>Lorem Ipsum</h3></a>
+                    <p>Lorem ipsum dolor sit amet, ed do eiusmod tempor incididunt ut labore et dolore magna. </p>
+                </div>
+                <!-- /END post-item -->
+
+                <!-- post-item -->
+                <div class="col3 post-item">
+                    <div class="image">
+                        <div class="post-date">dd/mm</div>
+                        <img src="images/aircraft.jpg" style="max-width:100%">
+                    </div>
+                    <a href="#"><h3>Lorem Ipsum</h3></a>
+                    <p>Lorem ipsum dolor sit amet, ed do eiusmod tempor incididunt ut labore et dolore magna. </p>
+                </div>
+                <!-- /END post-item -->
+
+            </div>
+            <!-- /END ROW -->
+
+        </div>
+        <!-- /END CONTAINER -->
+
+    </section>
+
+    <!-- =========================
+     FOOTER
+    ============================== -->
+    <footer>
+        <section class="row-section footer">
+            <div class="container">
+                <div class="row-fluid">
+                    <div class="col6 footer-item">
+                        <h3 class="title">Facebook</h3>
+                        <div class="content">
+                            <div class="fb-page" data-href="https://www.facebook.com/sth.net.br" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"></div>
+                        </div>
+                    </div>
+                    <div class="col6 footer-item contact">
+                        <h3 class="title">Contato</h3>
+                        <div class="content">
+                            <ul>
+                                <li>
+                                    <h4><i class="fa fa-map-marker"></i> Rua Fausto Guimarães, 315 A - 1ª Andar Bairro Pirajá, Juazeiro do Norte - CE</h4>
+                                </li>
+                                <li>
+                                    <h4><i class="fa fa-phone"></i> (88) 9999-9999</h4>
+                                </li>
+                                <li>
+                                    <h4><i class="fa fa-envelope-o"></i> <a href="#">contato@exemplo.com</a></h4>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col12 copyright" style="text-align: center">
+                        <p><i class="fa fa-copyright"></i>Copyright 2016 Sistech | Desenvolvido por Criiar</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+
     <!-- LOADING SCRIPTS -->
     <script src="js/jquery-1.11.1.min.js"></script>
     <script src="js/global.js"></script>
+    <script src="js/waypoints.min.js"></script>
     <script src="js/less.js"></script>
     <script src="js/jssor.slider.mini.js"></script>
     <script src="js/main.js"></script>
+
 </body>
 </html>

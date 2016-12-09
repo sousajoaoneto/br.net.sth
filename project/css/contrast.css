@@ -1,0 +1,19 @@
+/*BACKGROUND BLACK*/
+body.contrast, body.contrast .post-date{
+    background: #000;
+}
+/*BACKGROUND WHITE*/
+body.contrast .colored-line, body.contrast .colored-line-left{
+    background: #fff;
+}
+/*COLOR WHITE*/
+body.contrast *, body.contrast .dark-text{
+    color: #fff !important;
+}
+/*COLOR BLACK*/
+body.contrast #accessibility a:hover, body.contrast #primary-nav nav > ul.menu li a:hover{
+    color: #000 !important;
+}
+body.contrast footer,body.contrast #accessibility,body.contrast #services{
+    background: #333;
+}

@@ -1,3 +1,61 @@
+@import "fonts/css/font-awesome.css";
+@import "fonts/css/font-awesome.min.css";
+
+/* GLOBAL */
+
+html {
+    font-size: 100%;
+}
+
+body {
+    background: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: #313131;
+    line-height: 28px;
+    text-align: center;
+    overflow-x: hidden !important;
+    margin: auto !important;
+}
+
+/* HEADINGS */
+
+h1,
+h2 {
+    font-family: 'Lane', sans-serif;
+    font-weight: normal;
+}
+
+h1 {
+    font-size: 3.75rem;
+    line-height: 4.688rem;
+}
+
+h2 {
+    font-size: 3.125rem;
+    line-height: 4.063rem;
+}
+
+h3 {
+    font-size: 24px;
+    line-height: 38px;
+    font-weight: 300;
+}
+
+h4 {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 300;
+}
+
+h5 {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+/*HEADER*/
+
 header.nav .row-fluid{
     padding-top: 10px;
     padding-bottom: 10px;
@@ -61,19 +119,22 @@ header.nav>.container{
     border: 1px solid #fff;
 }
 
+.row-section{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
 /*
 =======================================
             SLIDER
 =======================================
 */
 #slider1_container{
-    display: none;
+    display:none;
     position: relative;
     margin: 0 auto;
     top: 0px;
     left: 0px;
-    width: 1300px;
-    height: 500px;
     overflow: hidden;
 }
 .jssorb21 {
@@ -112,3 +173,152 @@ header.nav>.container{
 .jssora21r:hover { background-position: -183px -33px; }
 .jssora21l.jssora21ldn { background-position: -243px -33px; }
 .jssora21r.jssora21rdn { background-position: -303px -33px; }
+
+
+/*---------------------------------------
+   HEADERS
+-----------------------------------------*/
+.section-header {
+    padding-bottom: 78px;
+}
+.section-header h2 {
+    margin-bottom: 20px;
+}
+.dark-text {
+    color: #272727;
+}
+.section-header .section-description {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/*---------------------------------------
+   LINES
+-----------------------------------------*/
+
+.colored-line {
+    margin: 0 auto;
+    z-index: 1;
+    width: 165px;
+    height: 1px;
+    left: 0;
+    right: 0;
+    position: absolute;
+}
+
+.white-line {
+    margin: auto;
+    z-index: 1;
+    width: 165px;
+    height: 1px;
+    background: #ffffff;
+}
+
+.colored-line-left {
+    float: left;
+    z-index: 1;
+    display: block;
+    width: 165px;
+    height: 1px;
+    margin-left: 0;
+}
+
+.colored-line, .colored-line-left {
+    background: #008ed6;
+}
+
+/*PRODUCT*/
+.product-brief{
+    padding-top: 100px;
+}
+.product-brief .phone-image {
+    max-width: 350px;
+    margin: auto;
+    margin-bottom: 50px;
+}
+.product-brief .phone-image img {
+    width: 100%;
+}
+.product-brief .left-align {
+    text-align: left;
+    margin-bottom: 50px;
+}
+.product-brief .left-align p {
+    display: block;
+    float: none;
+    margin-top: 50px;
+}
+
+/*SERVICES*/
+#services{
+    background: #e5e5e5;
+}
+.services .single-service {
+    padding-bottom: 60px;
+}
+.services .single-service .service-icon {
+    font-size: 80px;
+}
+.services .single-service .service-icon, .services .single-service h3 {
+    color: #008ed6;
+}
+
+/*LAST NEWS*/
+.post-item{
+    position: relative;
+}
+.post-date {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    background: #fff;
+    padding: 3px;
+}
+.post-item h3,.post-item p{
+    margin: 0;
+    text-align: left;
+}
+
+
+footer{
+    text-align: left;
+    background: #193A67;
+}
+footer *{
+    color: #ffffff;
+    text-align: left;
+}
+footer .footer-item{
+    width: 100%;
+}
+
+/* footer icons */
+
+footer ul li{
+    display: inherit;
+}
+.contact li i.fa{
+    font-size: 2rem;
+}
+.contact h4{
+    font-size: 1.2rem;
+    margin: 0;
+}
+footer .copyright{
+    margin: 0;
+    margin-top: 50px;
+    text-align: center;
+    clear: both;
+}
+footer .copyright p{
+    margin: 0;
+    text-align: center;
+}
+
+
+.mobile-nav .active{
+    background: #000;
+}
